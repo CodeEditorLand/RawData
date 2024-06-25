@@ -1,0 +1,860 @@
+{
+  "lastUpdate": 1719325146411,
+  "repoUrl": "https://github.com/swc-project/swc",
+  "entries": {
+    "Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8ef30cc08c86251bb8bebf66286949805e332b6c",
+          "message": "perf(es/parser): Increase token context size (#9104)\n\n**Description:**\r\n\r\nNow, `TokenContext` is 1 byte, so we can increase the stack size for it.\r\n\r\n```\r\nGnuplot not found, using plotters backend\r\nBenchmarking es/parser/colors\r\nBenchmarking es/parser/colors: Warming up for 3.0000 s\r\nBenchmarking es/parser/colors: Collecting 100 samples in estimated 5.0243 s (561k iterations)\r\nBenchmarking es/parser/colors: Analyzing\r\nes/parser/colors        time:   [8.8652 µs 8.8821 µs 8.9013 µs]\r\n                        change: [+0.3001% +0.6986% +1.0681%] (p = 0.00 < 0.05)\r\n                        Change within noise threshold.\r\nFound 9 outliers among 100 measurements (9.00%)\r\n  4 (4.00%) high mild\r\n  5 (5.00%) high severe\r\n\r\nBenchmarking es/parser/angular\r\nBenchmarking es/parser/angular: Warming up for 3.0000 s\r\nBenchmarking es/parser/angular: Collecting 100 samples in estimated 5.1460 s (1100 iterations)\r\nBenchmarking es/parser/angular: Analyzing\r\nes/parser/angular       time:   [4.5989 ms 4.6075 ms 4.6180 ms]\r\n                        change: [+1.5999% +1.9780% +2.3764%] (p = 0.00 < 0.05)\r\n                        Performance has regressed.\r\nFound 8 outliers among 100 measurements (8.00%)\r\n  1 (1.00%) high mild\r\n  7 (7.00%) high severe\r\n\r\nBenchmarking es/parser/backbone\r\nBenchmarking es/parser/backbone: Warming up for 3.0000 s\r\nBenchmarking es/parser/backbone: Collecting 100 samples in estimated 7.0775 s (10k iterations)\r\nBenchmarking es/parser/backbone: Analyzing\r\nes/parser/backbone      time:   [694.50 µs 695.84 µs 697.51 µs]\r\n                        change: [-1.1099% -0.7438% -0.3658%] (p = 0.00 < 0.05)\r\n                        Change within noise threshold.\r\nFound 13 outliers among 100 measurements (13.00%)\r\n  5 (5.00%) high mild\r\n  8 (8.00%) high severe\r\n\r\nBenchmarking es/parser/jquery\r\nBenchmarking es/parser/jquery: Warming up for 3.0000 s\r\nBenchmarking es/parser/jquery: Collecting 100 samples in estimated 5.1340 s (1300 iterations)\r\nBenchmarking es/parser/jquery: Analyzing\r\nes/parser/jquery        time:   [3.9253 ms 3.9334 ms 3.9430 ms]\r\n                        change: [+0.2515% +0.6374% +1.0228%] (p = 0.00 < 0.05)\r\n                        Change within noise threshold.\r\nFound 10 outliers among 100 measurements (10.00%)\r\n  3 (3.00%) high mild\r\n  7 (7.00%) high severe\r\n\r\nBenchmarking es/parser/jquery mobile\r\nBenchmarking es/parser/jquery mobile: Warming up for 3.0000 s\r\nBenchmarking es/parser/jquery mobile: Collecting 100 samples in estimated 5.3971 s (900 iterations)\r\nBenchmarking es/parser/jquery mobile: Analyzing\r\nes/parser/jquery mobile time:   [5.9041 ms 5.9175 ms 5.9340 ms]\r\n                        change: [-1.8844% -1.5663% -1.2247%] (p = 0.00 < 0.05)\r\n                        Performance has improved.\r\nFound 11 outliers among 100 measurements (11.00%)\r\n  4 (4.00%) high mild\r\n  7 (7.00%) high severe\r\n\r\nBenchmarking es/parser/mootools\r\nBenchmarking es/parser/mootools: Warming up for 3.0000 s\r\nBenchmarking es/parser/mootools: Collecting 100 samples in estimated 5.1747 s (1700 iterations)\r\nBenchmarking es/parser/mootools: Analyzing\r\nes/parser/mootools      time:   [3.0240 ms 3.0352 ms 3.0489 ms]\r\n                        change: [-1.5654% -1.1553% -0.6819%] (p = 0.00 < 0.05)\r\n                        Change within noise threshold.\r\nFound 7 outliers among 100 measurements (7.00%)\r\n  1 (1.00%) high mild\r\n  6 (6.00%) high severe\r\n\r\nBenchmarking es/parser/underscore\r\nBenchmarking es/parser/underscore: Warming up for 3.0000 s\r\nBenchmarking es/parser/underscore: Collecting 100 samples in estimated 6.1976 s (10k iterations)\r\nBenchmarking es/parser/underscore: Analyzing\r\nes/parser/underscore    time:   [612.60 µs 614.58 µs 616.82 µs]\r\n                        change: [-1.9306% -1.5582% -1.1803%] (p = 0.00 < 0.05)\r\n                        Performance has improved.\r\nFound 7 outliers among 100 measurements (7.00%)\r\n  4 (4.00%) high mild\r\n  3 (3.00%) high severe\r\n\r\nBenchmarking es/parser/three\r\nBenchmarking es/parser/three: Warming up for 3.0000 s\r\nBenchmarking es/parser/three: Collecting 100 samples in estimated 5.1445 s (300 iterations)\r\nBenchmarking es/parser/three: Analyzing\r\nes/parser/three         time:   [16.890 ms 16.951 ms 17.026 ms]\r\n                        change: [-2.1520% -1.7192% -1.2254%] (p = 0.00 < 0.05)\r\n                        Performance has improved.\r\nFound 17 outliers among 100 measurements (17.00%)\r\n  3 (3.00%) high mild\r\n  14 (14.00%) high severe\r\n\r\nBenchmarking es/parser/yui\r\nBenchmarking es/parser/yui: Warming up for 3.0000 s\r\nBenchmarking es/parser/yui: Collecting 100 samples in estimated 5.0417 s (1800 iterations)\r\nBenchmarking es/parser/yui: Analyzing\r\nes/parser/yui           time:   [2.8076 ms 2.8156 ms 2.8249 ms]\r\n                        change: [-2.2730% -1.9284% -1.5384%] (p = 0.00 < 0.05)\r\n                        Performance has improved.\r\nFound 16 outliers among 100 measurements (16.00%)\r\n  5 (5.00%) high mild\r\n  11 (11.00%) high severe\r\n\r\nBenchmarking es/parser/cal-com\r\nBenchmarking es/parser/cal-com: Warming up for 3.0000 s\r\nBenchmarking es/parser/cal-com: Collecting 100 samples in estimated 5.9664 s (400 iterations)\r\nBenchmarking es/parser/cal-com: Analyzing\r\nes/parser/cal-com       time:   [14.815 ms 14.888 ms 14.974 ms]\r\n                        change: [-1.2376% -0.7153% -0.1968%] (p = 0.01 < 0.05)\r\n                        Change within noise threshold.\r\nFound 17 outliers among 100 measurements (17.00%)\r\n  1 (1.00%) high mild\r\n  16 (16.00%) high severe\r\n\r\nBenchmarking es/parser/typescript\r\nBenchmarking es/parser/typescript: Warming up for 3.0000 s\r\n\r\n\r\nWarning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 10.5s, or reduce sample count to 40.\r\nBenchmarking es/parser/typescript: Collecting 100 samples in estimated 10.496 s (100 iterations)\r\nBenchmarking es/parser/typescript: Analyzing\r\nes/parser/typescript    time:   [101.97 ms 102.32 ms 102.73 ms]\r\n                        change: [-1.6102% -1.1640% -0.7126%] (p = 0.00 < 0.05)\r\n                        Change within noise threshold.\r\nFound 14 outliers among 100 measurements (14.00%)\r\n  4 (4.00%) high mild\r\n  10 (10.00%) high severe\r\n\r\n```",
+          "timestamp": "2024-06-25T14:02:38Z",
+          "tree_id": "77a31be685ccdf3dee71d39d0b71b88010ade339",
+          "url": "https://github.com/swc-project/swc/commit/8ef30cc08c86251bb8bebf66286949805e332b6c"
+        },
+        "date": 1719325146410,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "es/full/bugs-1",
+            "value": 277173,
+            "range": "± 3123",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/antd",
+            "value": 2021256199,
+            "range": "± 35238005",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/d3",
+            "value": 400983199,
+            "range": "± 12235885",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/echarts",
+            "value": 1698521459,
+            "range": "± 14264891",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/jquery",
+            "value": 107116522,
+            "range": "± 1154548",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/lodash",
+            "value": 117693311,
+            "range": "± 799943",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/moment",
+            "value": 61114027,
+            "range": "± 533841",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/react",
+            "value": 18640865,
+            "range": "± 78001",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/terser",
+            "value": 295637335,
+            "range": "± 6653613",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/three",
+            "value": 516700125,
+            "range": "± 17966877",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/typescript",
+            "value": 3467015277,
+            "range": "± 31725111",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/victory",
+            "value": 927838972,
+            "range": "± 39615392",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/vue",
+            "value": 152618463,
+            "range": "± 2073321",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es3",
+            "value": 58486,
+            "range": "± 801",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es5",
+            "value": 58576,
+            "range": "± 294",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2015",
+            "value": 58364,
+            "range": "± 253",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2016",
+            "value": 58402,
+            "range": "± 145",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2017",
+            "value": 58662,
+            "range": "± 208",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2018",
+            "value": 58644,
+            "range": "± 197",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2019",
+            "value": 58597,
+            "range": "± 3260",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2020",
+            "value": 58561,
+            "range": "± 141",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es3",
+            "value": 157133177,
+            "range": "± 1789592",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es5",
+            "value": 151619886,
+            "range": "± 604305",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2015",
+            "value": 112133018,
+            "range": "± 1098222",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2016",
+            "value": 110438045,
+            "range": "± 917714",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2017",
+            "value": 110908602,
+            "range": "± 1355052",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2018",
+            "value": 108810907,
+            "range": "± 494710",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2019",
+            "value": 108168131,
+            "range": "± 712287",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2020",
+            "value": 104256302,
+            "range": "± 888590",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/parser",
+            "value": 431710,
+            "range": "± 4078",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/base/fixer",
+            "value": 15446,
+            "range": "± 71",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/base/resolver_and_hygiene",
+            "value": 80600,
+            "range": "± 1476",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "serialization of serde",
+            "value": 277,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "css/minify/libraries/bootstrap",
+            "value": 22238628,
+            "range": "± 105460",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "css/visitor/compare/clone",
+            "value": 1400672,
+            "range": "± 32630",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "css/visitor/compare/visit_mut_span",
+            "value": 1515462,
+            "range": "± 8962",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "css/visitor/compare/visit_mut_span_panic",
+            "value": 1547505,
+            "range": "± 23122",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "css/visitor/compare/fold_span",
+            "value": 2037770,
+            "range": "± 24482",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "css/visitor/compare/fold_span_panic",
+            "value": 2177527,
+            "range": "± 10344",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "css/lexer/bootstrap_5_1_3",
+            "value": 3461278,
+            "range": "± 3977",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "css/lexer/foundation_6_7_4",
+            "value": 2798925,
+            "range": "± 3780",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "css/lexer/tailwind_3_1_1",
+            "value": 537324,
+            "range": "± 397",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "css/parser/bootstrap_5_1_3",
+            "value": 16465476,
+            "range": "± 108424",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "css/parser/foundation_6_7_4",
+            "value": 13224686,
+            "range": "± 184168",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "css/parser/tailwind_3_1_1",
+            "value": 2559935,
+            "range": "± 76565",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/codegen/colors",
+            "value": 713533,
+            "range": "± 392528",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/codegen/large",
+            "value": 2993809,
+            "range": "± 1594560",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/codegen/with-parser/colors",
+            "value": 40100,
+            "range": "± 357",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/codegen/with-parser/large",
+            "value": 454318,
+            "range": "± 2074",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/antd",
+            "value": 1606835714,
+            "range": "± 29863722",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/d3",
+            "value": 342369096,
+            "range": "± 10411455",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/echarts",
+            "value": 1351446103,
+            "range": "± 21104288",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/jquery",
+            "value": 85503316,
+            "range": "± 887153",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/lodash",
+            "value": 106710375,
+            "range": "± 764583",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/moment",
+            "value": 49813025,
+            "range": "± 308882",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/react",
+            "value": 16466208,
+            "range": "± 98178",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/terser",
+            "value": 225249824,
+            "range": "± 3637426",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/three",
+            "value": 389704275,
+            "range": "± 12480790",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/typescript",
+            "value": 2788212828,
+            "range": "± 19339216",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/victory",
+            "value": 621960278,
+            "range": "± 9885942",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/vue",
+            "value": 122037783,
+            "range": "± 587103",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/compare/clone",
+            "value": 1734482,
+            "range": "± 5819",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/compare/visit_mut_span",
+            "value": 2079191,
+            "range": "± 4051",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/compare/visit_mut_span_panic",
+            "value": 2080330,
+            "range": "± 18392",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/compare/fold_span",
+            "value": 2789725,
+            "range": "± 28484",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/compare/fold_span_panic",
+            "value": 2840355,
+            "range": "± 4291",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/colors",
+            "value": 8340,
+            "range": "± 30",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/angular",
+            "value": 4179101,
+            "range": "± 17673",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/backbone",
+            "value": 632825,
+            "range": "± 1716",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/jquery",
+            "value": 3553245,
+            "range": "± 47074",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/jquery mobile",
+            "value": 5372204,
+            "range": "± 16210",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/mootools",
+            "value": 2867453,
+            "range": "± 25638",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/underscore",
+            "value": 536916,
+            "range": "± 1228",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/three",
+            "value": 15816124,
+            "range": "± 28621",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/yui",
+            "value": 2748313,
+            "range": "± 26890",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/cal-com",
+            "value": 13031928,
+            "range": "± 75376",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/typescript",
+            "value": 93208211,
+            "range": "± 528816",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/colors",
+            "value": 22616,
+            "range": "± 138",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/angular",
+            "value": 11809496,
+            "range": "± 73510",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/backbone",
+            "value": 1838841,
+            "range": "± 5698",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/jquery",
+            "value": 10106111,
+            "range": "± 74314",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/jquery mobile",
+            "value": 15249862,
+            "range": "± 102120",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/mootools",
+            "value": 7896697,
+            "range": "± 11465",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/underscore",
+            "value": 1601474,
+            "range": "± 5946",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/three",
+            "value": 43817144,
+            "range": "± 234933",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/yui",
+            "value": 7289518,
+            "range": "± 62907",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/cal-com",
+            "value": 39512786,
+            "range": "± 191423",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/typescript",
+            "value": 273422593,
+            "range": "± 1877005",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/preset-env/usage/builtin_type",
+            "value": 137753,
+            "range": "± 34887",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/preset-env/usage/property",
+            "value": 16855,
+            "range": "± 90",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/resolver/typescript",
+            "value": 98826119,
+            "range": "± 2082414",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/fixer/typescript",
+            "value": 81532087,
+            "range": "± 3414532",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/hygiene/typescript",
+            "value": 178319055,
+            "range": "± 4199745",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/resolver_with_hygiene/typescript",
+            "value": 301361275,
+            "range": "± 4418534",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/module_clone",
+            "value": 56303,
+            "range": "± 449",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/fold_empty",
+            "value": 59423,
+            "range": "± 655",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/fold_noop_impl_all",
+            "value": 59477,
+            "range": "± 730",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/fold_noop_impl_vec",
+            "value": 59658,
+            "range": "± 538",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/boxing_boxed_clone",
+            "value": 59,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/boxing_unboxed_clone",
+            "value": 47,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/boxing_boxed",
+            "value": 105,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/boxing_unboxed",
+            "value": 82,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/visit_contains_this",
+            "value": 2669,
+            "range": "± 31",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/base/parallel/resolver/typescript",
+            "value": 2429459406,
+            "range": "± 133204166",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/base/parallel/hygiene/typescript",
+            "value": 3236122155,
+            "range": "± 42381377",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "babelify-only",
+            "value": 493119,
+            "range": "± 6583",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_angular",
+            "value": 41729039,
+            "range": "± 4185410",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_backbone",
+            "value": 4426418,
+            "range": "± 162895",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_jquery",
+            "value": 29464522,
+            "range": "± 308205",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_jquery_mobile",
+            "value": 52188167,
+            "range": "± 638211",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_mootools",
+            "value": 26657431,
+            "range": "± 332858",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_underscore",
+            "value": 3702607,
+            "range": "± 20242",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_yui",
+            "value": 26741635,
+            "range": "± 1563673",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/minify/document/css_spec",
+            "value": 45388248,
+            "range": "± 159652",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/minify/document/github",
+            "value": 18189977,
+            "range": "± 83273",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/minify/document/stackoverflow",
+            "value": 16567800,
+            "range": "± 671215",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/minify/document_fragment/css_spec",
+            "value": 44265506,
+            "range": "± 64738",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/minify/document_fragment/github",
+            "value": 17862388,
+            "range": "± 70645",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/minify/document_fragment/stackoverflow",
+            "value": 16183072,
+            "range": "± 19273",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/document/visitor/compare/clone",
+            "value": 164146,
+            "range": "± 1989",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/document/visitor/compare/visit_mut_span",
+            "value": 179951,
+            "range": "± 1095",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/document/visitor/compare/visit_mut_span_panic",
+            "value": 185856,
+            "range": "± 3583",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/document/visitor/compare/fold_span",
+            "value": 230277,
+            "range": "± 1876",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/document/visitor/compare/fold_span_panic",
+            "value": 279438,
+            "range": "± 745",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/document_fragment/visitor/compare/clone",
+            "value": 164661,
+            "range": "± 824",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/document_fragment/visitor/compare/visit_mut_span",
+            "value": 181005,
+            "range": "± 2268",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/document_fragment/visitor/compare/visit_mut_span_panic",
+            "value": 186043,
+            "range": "± 1019",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/document_fragment/visitor/compare/fold_span",
+            "value": 231619,
+            "range": "± 1143",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/document_fragment/visitor/compare/fold_span_panic",
+            "value": 278859,
+            "range": "± 1645",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/lexer/css_2021_spec",
+            "value": 12902935,
+            "range": "± 20881",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/lexer/github_com_17_05_2022",
+            "value": 4967659,
+            "range": "± 106560",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/lexer/stackoverflow_com_17_05_2022",
+            "value": 4707214,
+            "range": "± 5792",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/parser/parser_document/css_2021_spec",
+            "value": 26761724,
+            "range": "± 104740",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/parser/parser_document/github_com_17_05_2022",
+            "value": 8664231,
+            "range": "± 18426",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/parser/parser_document/stackoverflow_com_17_05_2022",
+            "value": 7569119,
+            "range": "± 14644",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/parser/parser_document_fragment/css_2021_spec",
+            "value": 26654758,
+            "range": "± 231912",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/parser/parser_document_fragment/github_com_17_05_2022",
+            "value": 8714091,
+            "range": "± 16960",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "html/parser/parser_document_fragment/stackoverflow_com_17_05_2022",
+            "value": 7621768,
+            "range": "± 20508",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ]
+  }
+}
