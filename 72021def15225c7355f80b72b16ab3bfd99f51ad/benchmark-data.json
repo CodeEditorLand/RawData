@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719814649950,
+  "lastUpdate": 1719822721786,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
@@ -22,600 +22,600 @@
           "tree_id": "71ba95c2e39847b20d6ba285a748ca56f821f9ff",
           "url": "https://github.com/swc-project/swc/commit/72021def15225c7355f80b72b16ab3bfd99f51ad"
         },
-        "date": 1719814649949,
+        "date": 1719822721785,
         "tool": "cargo",
         "benches": [
           {
             "name": "es/full/bugs-1",
-            "value": 272335,
-            "range": "± 2727",
+            "value": 271524,
+            "range": "± 5144",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/minify/libraries/antd",
-            "value": 1724835960,
-            "range": "± 58060489",
+            "value": 1972320497,
+            "range": "± 44760327",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/minify/libraries/d3",
-            "value": 340045412,
-            "range": "± 870659",
+            "value": 364460341,
+            "range": "± 3783037",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/minify/libraries/echarts",
-            "value": 1435851206,
-            "range": "± 12040633",
+            "value": 1573283082,
+            "range": "± 61406967",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/minify/libraries/jquery",
-            "value": 102815548,
-            "range": "± 220552",
+            "value": 102932139,
+            "range": "± 399880",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/minify/libraries/lodash",
-            "value": 113749511,
-            "range": "± 243817",
+            "value": 113684561,
+            "range": "± 5222504",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/minify/libraries/moment",
-            "value": 59522593,
-            "range": "± 85565",
+            "value": 59606558,
+            "range": "± 169781",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/minify/libraries/react",
-            "value": 18336958,
-            "range": "± 29028",
+            "value": 18324796,
+            "range": "± 34496",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/minify/libraries/terser",
-            "value": 272388301,
-            "range": "± 930541",
+            "value": 280056428,
+            "range": "± 4055851",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/minify/libraries/three",
-            "value": 462083117,
-            "range": "± 2270938",
+            "value": 477273833,
+            "range": "± 4875234",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/minify/libraries/typescript",
-            "value": 3202671056,
-            "range": "± 22731960",
+            "value": 3258055504,
+            "range": "± 28032949",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/minify/libraries/victory",
-            "value": 719319124,
-            "range": "± 6809019",
+            "value": 739959873,
+            "range": "± 14613604",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/minify/libraries/vue",
-            "value": 144947049,
-            "range": "± 1063717",
+            "value": 146498471,
+            "range": "± 607108",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/codegen/es3",
-            "value": 58755,
-            "range": "± 206",
+            "value": 57646,
+            "range": "± 200",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/codegen/es5",
-            "value": 58745,
-            "range": "± 225",
+            "value": 58010,
+            "range": "± 234",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/codegen/es2015",
-            "value": 58466,
-            "range": "± 197",
+            "value": 57604,
+            "range": "± 178",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/codegen/es2016",
-            "value": 58735,
-            "range": "± 253",
+            "value": 57881,
+            "range": "± 225",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/codegen/es2017",
-            "value": 58744,
-            "range": "± 156",
+            "value": 57679,
+            "range": "± 201",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/codegen/es2018",
-            "value": 58363,
-            "range": "± 176",
+            "value": 57748,
+            "range": "± 284",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/codegen/es2019",
-            "value": 58508,
-            "range": "± 162",
+            "value": 57729,
+            "range": "± 123",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/codegen/es2020",
-            "value": 58705,
-            "range": "± 151",
+            "value": 57769,
+            "range": "± 891",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/all/es3",
-            "value": 163424759,
-            "range": "± 1005045",
+            "value": 162947325,
+            "range": "± 652713",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/all/es5",
-            "value": 158426007,
-            "range": "± 1493677",
+            "value": 157896613,
+            "range": "± 875741",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/all/es2015",
-            "value": 117604551,
-            "range": "± 984880",
+            "value": 116741816,
+            "range": "± 4398266",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/all/es2016",
-            "value": 116202382,
-            "range": "± 946912",
+            "value": 115893272,
+            "range": "± 906602",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/all/es2017",
-            "value": 115740294,
-            "range": "± 770813",
+            "value": 115229758,
+            "range": "± 575122",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/all/es2018",
-            "value": 113406523,
-            "range": "± 1039223",
+            "value": 112942626,
+            "range": "± 861306",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/all/es2019",
-            "value": 113354168,
-            "range": "± 670419",
+            "value": 112501031,
+            "range": "± 824366",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/all/es2020",
-            "value": 109095980,
-            "range": "± 688540",
+            "value": 108760770,
+            "range": "± 808861",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/parser",
-            "value": 474232,
-            "range": "± 2698",
+            "value": 477279,
+            "range": "± 2715",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/base/fixer",
-            "value": 15136,
-            "range": "± 55",
+            "value": 15782,
+            "range": "± 106",
             "unit": "ns/iter"
           },
           {
             "name": "es/full/base/resolver_and_hygiene",
-            "value": 80537,
-            "range": "± 229",
+            "value": 80422,
+            "range": "± 369",
             "unit": "ns/iter"
           },
           {
             "name": "serialization of serde",
             "value": 277,
-            "range": "± 0",
+            "range": "± 5",
             "unit": "ns/iter"
           },
           {
             "name": "css/minify/libraries/bootstrap",
-            "value": 22951827,
-            "range": "± 183071",
+            "value": 22173833,
+            "range": "± 115040",
             "unit": "ns/iter"
           },
           {
             "name": "css/visitor/compare/clone",
-            "value": 1356283,
-            "range": "± 10300",
+            "value": 1367445,
+            "range": "± 15892",
             "unit": "ns/iter"
           },
           {
             "name": "css/visitor/compare/visit_mut_span",
-            "value": 1497859,
-            "range": "± 6560",
+            "value": 1483294,
+            "range": "± 13036",
             "unit": "ns/iter"
           },
           {
             "name": "css/visitor/compare/visit_mut_span_panic",
-            "value": 1487081,
-            "range": "± 27306",
+            "value": 1508233,
+            "range": "± 37740",
             "unit": "ns/iter"
           },
           {
             "name": "css/visitor/compare/fold_span",
-            "value": 1995532,
-            "range": "± 7308",
+            "value": 1998847,
+            "range": "± 8077",
             "unit": "ns/iter"
           },
           {
             "name": "css/visitor/compare/fold_span_panic",
-            "value": 2131429,
-            "range": "± 6420",
+            "value": 2137787,
+            "range": "± 4608",
             "unit": "ns/iter"
           },
           {
             "name": "css/lexer/bootstrap_5_1_3",
-            "value": 3522443,
-            "range": "± 7434",
+            "value": 3457409,
+            "range": "± 14762",
             "unit": "ns/iter"
           },
           {
             "name": "css/lexer/foundation_6_7_4",
-            "value": 2832742,
-            "range": "± 3005",
+            "value": 2796574,
+            "range": "± 4750",
             "unit": "ns/iter"
           },
           {
             "name": "css/lexer/tailwind_3_1_1",
-            "value": 543945,
-            "range": "± 656",
+            "value": 535378,
+            "range": "± 965",
             "unit": "ns/iter"
           },
           {
             "name": "css/parser/bootstrap_5_1_3",
-            "value": 16064470,
-            "range": "± 22162",
+            "value": 16071300,
+            "range": "± 41198",
             "unit": "ns/iter"
           },
           {
             "name": "css/parser/foundation_6_7_4",
-            "value": 12816874,
-            "range": "± 17701",
+            "value": 12850239,
+            "range": "± 518418",
             "unit": "ns/iter"
           },
           {
             "name": "css/parser/tailwind_3_1_1",
-            "value": 2542378,
-            "range": "± 12042",
+            "value": 2553433,
+            "range": "± 1433",
             "unit": "ns/iter"
           },
           {
             "name": "es/codegen/colors",
-            "value": 728033,
-            "range": "± 396832",
+            "value": 715718,
+            "range": "± 392110",
             "unit": "ns/iter"
           },
           {
             "name": "es/codegen/large",
-            "value": 2951631,
-            "range": "± 1589634",
+            "value": 2872136,
+            "range": "± 1567307",
             "unit": "ns/iter"
           },
           {
             "name": "es/codegen/with-parser/colors",
-            "value": 41569,
-            "range": "± 341",
+            "value": 42623,
+            "range": "± 279",
             "unit": "ns/iter"
           },
           {
             "name": "es/codegen/with-parser/large",
-            "value": 451960,
-            "range": "± 8704",
+            "value": 472727,
+            "range": "± 3781",
             "unit": "ns/iter"
           },
           {
             "name": "es/minify/libraries/antd",
-            "value": 1385792162,
-            "range": "± 31216808",
+            "value": 1414912541,
+            "range": "± 24070671",
             "unit": "ns/iter"
           },
           {
             "name": "es/minify/libraries/d3",
-            "value": 279026617,
-            "range": "± 5042436",
+            "value": 279806368,
+            "range": "± 1233674",
             "unit": "ns/iter"
           },
           {
             "name": "es/minify/libraries/echarts",
-            "value": 1126090911,
-            "range": "± 6274531",
+            "value": 1142665046,
+            "range": "± 8049108",
             "unit": "ns/iter"
           },
           {
             "name": "es/minify/libraries/jquery",
-            "value": 82258672,
-            "range": "± 377962",
+            "value": 82310561,
+            "range": "± 384768",
             "unit": "ns/iter"
           },
           {
             "name": "es/minify/libraries/lodash",
-            "value": 104162208,
-            "range": "± 596914",
+            "value": 105063406,
+            "range": "± 2616340",
             "unit": "ns/iter"
           },
           {
             "name": "es/minify/libraries/moment",
-            "value": 48195233,
-            "range": "± 810318",
+            "value": 48368388,
+            "range": "± 179356",
             "unit": "ns/iter"
           },
           {
             "name": "es/minify/libraries/react",
-            "value": 16245445,
-            "range": "± 37969",
+            "value": 16551085,
+            "range": "± 60396",
             "unit": "ns/iter"
           },
           {
             "name": "es/minify/libraries/terser",
-            "value": 215329352,
-            "range": "± 793154",
+            "value": 221468316,
+            "range": "± 1833435",
             "unit": "ns/iter"
           },
           {
             "name": "es/minify/libraries/three",
-            "value": 356934503,
-            "range": "± 1487228",
+            "value": 438267567,
+            "range": "± 14441075",
             "unit": "ns/iter"
           },
           {
             "name": "es/minify/libraries/typescript",
-            "value": 2658798345,
-            "range": "± 19130704",
+            "value": 2886370341,
+            "range": "± 20972344",
             "unit": "ns/iter"
           },
           {
             "name": "es/minify/libraries/victory",
-            "value": 552631217,
-            "range": "± 3199814",
+            "value": 665944661,
+            "range": "± 23666504",
             "unit": "ns/iter"
           },
           {
             "name": "es/minify/libraries/vue",
-            "value": 120792962,
-            "range": "± 884874",
+            "value": 122872661,
+            "range": "± 1432037",
             "unit": "ns/iter"
           },
           {
             "name": "es/visitor/compare/clone",
-            "value": 1708421,
-            "range": "± 4013",
+            "value": 1874666,
+            "range": "± 19678",
             "unit": "ns/iter"
           },
           {
             "name": "es/visitor/compare/visit_mut_span",
-            "value": 2053725,
-            "range": "± 14644",
+            "value": 2263643,
+            "range": "± 28527",
             "unit": "ns/iter"
           },
           {
             "name": "es/visitor/compare/visit_mut_span_panic",
-            "value": 2058175,
-            "range": "± 28870",
+            "value": 2251252,
+            "range": "± 80084",
             "unit": "ns/iter"
           },
           {
             "name": "es/visitor/compare/fold_span",
-            "value": 2760493,
-            "range": "± 9680",
+            "value": 3019248,
+            "range": "± 30380",
             "unit": "ns/iter"
           },
           {
             "name": "es/visitor/compare/fold_span_panic",
-            "value": 2802428,
-            "range": "± 4424",
+            "value": 3088356,
+            "range": "± 43512",
             "unit": "ns/iter"
           },
           {
             "name": "es/lexer/colors",
-            "value": 9311,
-            "range": "± 57",
+            "value": 9750,
+            "range": "± 209",
             "unit": "ns/iter"
           },
           {
             "name": "es/lexer/angular",
-            "value": 4968964,
-            "range": "± 28920",
+            "value": 5166637,
+            "range": "± 49110",
             "unit": "ns/iter"
           },
           {
             "name": "es/lexer/backbone",
-            "value": 653376,
-            "range": "± 4309",
+            "value": 675962,
+            "range": "± 7628",
             "unit": "ns/iter"
           },
           {
             "name": "es/lexer/jquery",
-            "value": 3597779,
-            "range": "± 14281",
+            "value": 3812012,
+            "range": "± 31917",
             "unit": "ns/iter"
           },
           {
             "name": "es/lexer/jquery mobile",
-            "value": 5450195,
-            "range": "± 51567",
+            "value": 5665483,
+            "range": "± 62693",
             "unit": "ns/iter"
           },
           {
             "name": "es/lexer/mootools",
-            "value": 2913494,
-            "range": "± 4935",
+            "value": 2982346,
+            "range": "± 22800",
             "unit": "ns/iter"
           },
           {
             "name": "es/lexer/underscore",
-            "value": 522349,
-            "range": "± 1922",
+            "value": 556604,
+            "range": "± 4153",
             "unit": "ns/iter"
           },
           {
             "name": "es/lexer/three",
-            "value": 15933031,
-            "range": "± 21242",
+            "value": 16711324,
+            "range": "± 129650",
             "unit": "ns/iter"
           },
           {
             "name": "es/lexer/yui",
-            "value": 2906602,
-            "range": "± 12942",
+            "value": 2978973,
+            "range": "± 10647",
             "unit": "ns/iter"
           },
           {
             "name": "es/lexer/cal-com",
-            "value": 13021787,
-            "range": "± 47142",
+            "value": 13664471,
+            "range": "± 50148",
             "unit": "ns/iter"
           },
           {
             "name": "es/lexer/typescript",
-            "value": 90834042,
-            "range": "± 405864",
+            "value": 96255669,
+            "range": "± 583731",
             "unit": "ns/iter"
           },
           {
             "name": "es/parser/colors",
-            "value": 23479,
-            "range": "± 118",
+            "value": 24782,
+            "range": "± 230",
             "unit": "ns/iter"
           },
           {
             "name": "es/parser/angular",
-            "value": 12483878,
-            "range": "± 61579",
+            "value": 13578513,
+            "range": "± 286663",
             "unit": "ns/iter"
           },
           {
             "name": "es/parser/backbone",
-            "value": 1821928,
-            "range": "± 8396",
+            "value": 1929620,
+            "range": "± 22168",
             "unit": "ns/iter"
           },
           {
             "name": "es/parser/jquery",
-            "value": 10110040,
-            "range": "± 60625",
+            "value": 10679140,
+            "range": "± 226899",
             "unit": "ns/iter"
           },
           {
             "name": "es/parser/jquery mobile",
-            "value": 15176476,
-            "range": "± 98173",
+            "value": 16035610,
+            "range": "± 149650",
             "unit": "ns/iter"
           },
           {
             "name": "es/parser/mootools",
-            "value": 7864687,
-            "range": "± 16477",
+            "value": 8280698,
+            "range": "± 91738",
             "unit": "ns/iter"
           },
           {
             "name": "es/parser/underscore",
-            "value": 1585310,
-            "range": "± 6217",
+            "value": 1654689,
+            "range": "± 12962",
             "unit": "ns/iter"
           },
           {
             "name": "es/parser/three",
-            "value": 43598313,
-            "range": "± 307769",
+            "value": 54850552,
+            "range": "± 1900653",
             "unit": "ns/iter"
           },
           {
             "name": "es/parser/yui",
-            "value": 7414818,
-            "range": "± 43494",
+            "value": 7938074,
+            "range": "± 82752",
             "unit": "ns/iter"
           },
           {
             "name": "es/parser/cal-com",
-            "value": 39618934,
-            "range": "± 171637",
+            "value": 46574014,
+            "range": "± 2189089",
             "unit": "ns/iter"
           },
           {
             "name": "es/parser/typescript",
-            "value": 267337264,
-            "range": "± 564503",
+            "value": 351312226,
+            "range": "± 7152242",
             "unit": "ns/iter"
           },
           {
             "name": "es/preset-env/usage/builtin_type",
-            "value": 135236,
-            "range": "± 34725",
+            "value": 138135,
+            "range": "± 33521",
             "unit": "ns/iter"
           },
           {
             "name": "es/preset-env/usage/property",
-            "value": 15657,
-            "range": "± 42",
+            "value": 15999,
+            "range": "± 52",
             "unit": "ns/iter"
           },
           {
             "name": "es/resolver/typescript",
-            "value": 99957613,
-            "range": "± 2883052",
+            "value": 101476837,
+            "range": "± 4263386",
             "unit": "ns/iter"
           },
           {
             "name": "es/fixer/typescript",
-            "value": 81017386,
-            "range": "± 2302792",
+            "value": 83822747,
+            "range": "± 1209348",
             "unit": "ns/iter"
           },
           {
             "name": "es/hygiene/typescript",
-            "value": 183885913,
-            "range": "± 6513705",
+            "value": 181247857,
+            "range": "± 3490947",
             "unit": "ns/iter"
           },
           {
             "name": "es/resolver_with_hygiene/typescript",
-            "value": 300836345,
-            "range": "± 2682568",
+            "value": 308093764,
+            "range": "± 2468624",
             "unit": "ns/iter"
           },
           {
             "name": "es/visitor/base-perf/module_clone",
-            "value": 57427,
-            "range": "± 701",
+            "value": 57371,
+            "range": "± 465",
             "unit": "ns/iter"
           },
           {
             "name": "es/visitor/base-perf/fold_empty",
-            "value": 61126,
-            "range": "± 600",
+            "value": 60404,
+            "range": "± 579",
             "unit": "ns/iter"
           },
           {
             "name": "es/visitor/base-perf/fold_noop_impl_all",
-            "value": 60788,
-            "range": "± 883",
+            "value": 60493,
+            "range": "± 455",
             "unit": "ns/iter"
           },
           {
             "name": "es/visitor/base-perf/fold_noop_impl_vec",
-            "value": 60928,
-            "range": "± 400",
+            "value": 60480,
+            "range": "± 683",
             "unit": "ns/iter"
           },
           {
             "name": "es/visitor/base-perf/boxing_boxed_clone",
-            "value": 59,
+            "value": 60,
             "range": "± 0",
             "unit": "ns/iter"
           },
@@ -627,230 +627,230 @@
           },
           {
             "name": "es/visitor/base-perf/boxing_boxed",
-            "value": 108,
+            "value": 106,
             "range": "± 0",
             "unit": "ns/iter"
           },
           {
             "name": "es/visitor/base-perf/boxing_unboxed",
-            "value": 80,
+            "value": 81,
             "range": "± 0",
             "unit": "ns/iter"
           },
           {
             "name": "es/visitor/base-perf/visit_contains_this",
-            "value": 2586,
-            "range": "± 28",
+            "value": 2553,
+            "range": "± 14",
             "unit": "ns/iter"
           },
           {
             "name": "es/base/parallel/resolver/typescript",
-            "value": 2491978804,
-            "range": "± 100610535",
+            "value": 2492870513,
+            "range": "± 203658326",
             "unit": "ns/iter"
           },
           {
             "name": "es/base/parallel/hygiene/typescript",
-            "value": 3179590068,
-            "range": "± 39557995",
+            "value": 3234292144,
+            "range": "± 57805393",
             "unit": "ns/iter"
           },
           {
             "name": "babelify-only",
-            "value": 496542,
-            "range": "± 5838",
+            "value": 495413,
+            "range": "± 14393",
             "unit": "ns/iter"
           },
           {
             "name": "parse_and_babelify_angular",
-            "value": 39699833,
-            "range": "± 2232737",
+            "value": 39465892,
+            "range": "± 3274611",
             "unit": "ns/iter"
           },
           {
             "name": "parse_and_babelify_backbone",
-            "value": 4378453,
-            "range": "± 155597",
+            "value": 4342691,
+            "range": "± 179282",
             "unit": "ns/iter"
           },
           {
             "name": "parse_and_babelify_jquery",
-            "value": 28518290,
-            "range": "± 498358",
+            "value": 28366112,
+            "range": "± 234120",
             "unit": "ns/iter"
           },
           {
             "name": "parse_and_babelify_jquery_mobile",
-            "value": 51413647,
-            "range": "± 826484",
+            "value": 49576024,
+            "range": "± 921956",
             "unit": "ns/iter"
           },
           {
             "name": "parse_and_babelify_mootools",
-            "value": 26185116,
-            "range": "± 706007",
+            "value": 25989630,
+            "range": "± 323282",
             "unit": "ns/iter"
           },
           {
             "name": "parse_and_babelify_underscore",
-            "value": 3690196,
-            "range": "± 19737",
+            "value": 3659551,
+            "range": "± 21596",
             "unit": "ns/iter"
           },
           {
             "name": "parse_and_babelify_yui",
-            "value": 23928254,
-            "range": "± 263364",
+            "value": 24766075,
+            "range": "± 536094",
             "unit": "ns/iter"
           },
           {
             "name": "html/minify/document/css_spec",
-            "value": 48468547,
-            "range": "± 886890",
+            "value": 45902773,
+            "range": "± 2524738",
             "unit": "ns/iter"
           },
           {
             "name": "html/minify/document/github",
-            "value": 19479785,
-            "range": "± 352566",
+            "value": 18099531,
+            "range": "± 219157",
             "unit": "ns/iter"
           },
           {
             "name": "html/minify/document/stackoverflow",
-            "value": 17867759,
-            "range": "± 438940",
+            "value": 16791927,
+            "range": "± 306988",
             "unit": "ns/iter"
           },
           {
             "name": "html/minify/document_fragment/css_spec",
-            "value": 47331668,
-            "range": "± 283301",
+            "value": 44613332,
+            "range": "± 523328",
             "unit": "ns/iter"
           },
           {
             "name": "html/minify/document_fragment/github",
-            "value": 18037849,
-            "range": "± 349989",
+            "value": 17951449,
+            "range": "± 146035",
             "unit": "ns/iter"
           },
           {
             "name": "html/minify/document_fragment/stackoverflow",
-            "value": 18064496,
-            "range": "± 315318",
+            "value": 16389425,
+            "range": "± 278288",
             "unit": "ns/iter"
           },
           {
             "name": "html/document/visitor/compare/clone",
-            "value": 163498,
-            "range": "± 1061",
+            "value": 166259,
+            "range": "± 1541",
             "unit": "ns/iter"
           },
           {
             "name": "html/document/visitor/compare/visit_mut_span",
-            "value": 180776,
-            "range": "± 751",
+            "value": 183874,
+            "range": "± 1527",
             "unit": "ns/iter"
           },
           {
             "name": "html/document/visitor/compare/visit_mut_span_panic",
-            "value": 184220,
-            "range": "± 4237",
+            "value": 190046,
+            "range": "± 2901",
             "unit": "ns/iter"
           },
           {
             "name": "html/document/visitor/compare/fold_span",
-            "value": 227694,
-            "range": "± 1512",
+            "value": 230600,
+            "range": "± 972",
             "unit": "ns/iter"
           },
           {
             "name": "html/document/visitor/compare/fold_span_panic",
-            "value": 276571,
-            "range": "± 1584",
+            "value": 279523,
+            "range": "± 3001",
             "unit": "ns/iter"
           },
           {
             "name": "html/document_fragment/visitor/compare/clone",
-            "value": 165259,
-            "range": "± 1677",
+            "value": 171313,
+            "range": "± 4198",
             "unit": "ns/iter"
           },
           {
             "name": "html/document_fragment/visitor/compare/visit_mut_span",
-            "value": 180450,
-            "range": "± 1005",
+            "value": 184542,
+            "range": "± 792",
             "unit": "ns/iter"
           },
           {
             "name": "html/document_fragment/visitor/compare/visit_mut_span_panic",
-            "value": 186050,
-            "range": "± 1243",
+            "value": 187954,
+            "range": "± 644",
             "unit": "ns/iter"
           },
           {
             "name": "html/document_fragment/visitor/compare/fold_span",
-            "value": 227932,
-            "range": "± 1219",
+            "value": 229181,
+            "range": "± 1725",
             "unit": "ns/iter"
           },
           {
             "name": "html/document_fragment/visitor/compare/fold_span_panic",
-            "value": 277613,
-            "range": "± 718",
+            "value": 280705,
+            "range": "± 1573",
             "unit": "ns/iter"
           },
           {
             "name": "html/lexer/css_2021_spec",
-            "value": 12889712,
-            "range": "± 166222",
+            "value": 12797658,
+            "range": "± 114536",
             "unit": "ns/iter"
           },
           {
             "name": "html/lexer/github_com_17_05_2022",
-            "value": 4976380,
-            "range": "± 11172",
+            "value": 4911636,
+            "range": "± 80173",
             "unit": "ns/iter"
           },
           {
             "name": "html/lexer/stackoverflow_com_17_05_2022",
-            "value": 4688151,
-            "range": "± 10757",
+            "value": 4662069,
+            "range": "± 5695",
             "unit": "ns/iter"
           },
           {
             "name": "html/parser/parser_document/css_2021_spec",
-            "value": 25486561,
-            "range": "± 77399",
+            "value": 25254353,
+            "range": "± 316240",
             "unit": "ns/iter"
           },
           {
             "name": "html/parser/parser_document/github_com_17_05_2022",
-            "value": 8489090,
-            "range": "± 14441",
+            "value": 8364899,
+            "range": "± 15102",
             "unit": "ns/iter"
           },
           {
             "name": "html/parser/parser_document/stackoverflow_com_17_05_2022",
-            "value": 7450230,
-            "range": "± 24948",
+            "value": 7334983,
+            "range": "± 21969",
             "unit": "ns/iter"
           },
           {
             "name": "html/parser/parser_document_fragment/css_2021_spec",
-            "value": 25043343,
-            "range": "± 52490",
+            "value": 24955204,
+            "range": "± 73293",
             "unit": "ns/iter"
           },
           {
             "name": "html/parser/parser_document_fragment/github_com_17_05_2022",
-            "value": 8447319,
-            "range": "± 15738",
+            "value": 8366364,
+            "range": "± 10557",
             "unit": "ns/iter"
           },
           {
             "name": "html/parser/parser_document_fragment/stackoverflow_com_17_05_2022",
-            "value": 7488510,
-            "range": "± 22899",
+            "value": 7328629,
+            "range": "± 17170",
             "unit": "ns/iter"
           }
         ]
