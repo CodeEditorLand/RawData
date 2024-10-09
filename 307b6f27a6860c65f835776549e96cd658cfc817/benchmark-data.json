@@ -1,860 +1,860 @@
 {
-  "lastUpdate": 1720086043856,
-  "repoUrl": "https://github.com/swc-project/swc",
-  "entries": {
-    "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kdy1997.dev@gmail.com",
-            "name": "Donny/강동윤",
-            "username": "kdy1"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "307b6f27a6860c65f835776549e96cd658cfc817",
-          "message": "refactor(bindings/ts): Inline Wasm file into `wasm.js` (#9139)\n\n**Description:**\r\n\r\nRequested by https://github.com/marco-ippolito/node/pull/2/files#r1665267733",
-          "timestamp": "2024-07-04T18:23:55+09:00",
-          "tree_id": "03458f3ccdaf6a38dc57b259fce2503b18053444",
-          "url": "https://github.com/swc-project/swc/commit/307b6f27a6860c65f835776549e96cd658cfc817"
-        },
-        "date": 1720086043856,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "es/full/bugs-1",
-            "value": 277530,
-            "range": "± 1316",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/antd",
-            "value": 2068690340,
-            "range": "± 66548630",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/d3",
-            "value": 427297670,
-            "range": "± 10527793",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/echarts",
-            "value": 1782403033,
-            "range": "± 21631962",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/jquery",
-            "value": 110711034,
-            "range": "± 1613653",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/lodash",
-            "value": 121856807,
-            "range": "± 1883026",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/moment",
-            "value": 62759261,
-            "range": "± 401796",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/react",
-            "value": 19039215,
-            "range": "± 103697",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/terser",
-            "value": 341682493,
-            "range": "± 13840088",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/three",
-            "value": 636074858,
-            "range": "± 22958037",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/typescript",
-            "value": 3535337889,
-            "range": "± 33966321",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/victory",
-            "value": 1019700307,
-            "range": "± 19897044",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/vue",
-            "value": 160562412,
-            "range": "± 1996125",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es3",
-            "value": 60539,
-            "range": "± 164",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es5",
-            "value": 61459,
-            "range": "± 490",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es2015",
-            "value": 60896,
-            "range": "± 420",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es2016",
-            "value": 61107,
-            "range": "± 558",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es2017",
-            "value": 60855,
-            "range": "± 355",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es2018",
-            "value": 61255,
-            "range": "± 454",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es2019",
-            "value": 61536,
-            "range": "± 395",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es2020",
-            "value": 60531,
-            "range": "± 103",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es3",
-            "value": 165173322,
-            "range": "± 587926",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es5",
-            "value": 159546007,
-            "range": "± 405631",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es2015",
-            "value": 117744203,
-            "range": "± 917189",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es2016",
-            "value": 116652402,
-            "range": "± 1328741",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es2017",
-            "value": 115828027,
-            "range": "± 2321375",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es2018",
-            "value": 113835680,
-            "range": "± 878329",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es2019",
-            "value": 113487523,
-            "range": "± 602199",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es2020",
-            "value": 108667012,
-            "range": "± 558434",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/parser",
-            "value": 461526,
-            "range": "± 3091",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/base/fixer",
-            "value": 15260,
-            "range": "± 58",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/base/resolver_and_hygiene",
-            "value": 81899,
-            "range": "± 332",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "serialization of serde",
-            "value": 271,
-            "range": "± 7",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "css/minify/libraries/bootstrap",
-            "value": 22232929,
-            "range": "± 491634",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "css/visitor/compare/clone",
-            "value": 1365448,
-            "range": "± 9489",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "css/visitor/compare/visit_mut_span",
-            "value": 1479961,
-            "range": "± 22575",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "css/visitor/compare/visit_mut_span_panic",
-            "value": 1492992,
-            "range": "± 43582",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "css/visitor/compare/fold_span",
-            "value": 1998134,
-            "range": "± 18055",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "css/visitor/compare/fold_span_panic",
-            "value": 2119601,
-            "range": "± 3059",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "css/lexer/bootstrap_5_1_3",
-            "value": 3510020,
-            "range": "± 27575",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "css/lexer/foundation_6_7_4",
-            "value": 2830925,
-            "range": "± 2400",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "css/lexer/tailwind_3_1_1",
-            "value": 548287,
-            "range": "± 621",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "css/parser/bootstrap_5_1_3",
-            "value": 16142257,
-            "range": "± 124520",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "css/parser/foundation_6_7_4",
-            "value": 12847036,
-            "range": "± 7496",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "css/parser/tailwind_3_1_1",
-            "value": 2532937,
-            "range": "± 6072",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/codegen/colors",
-            "value": 723205,
-            "range": "± 395543",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/codegen/large",
-            "value": 2954185,
-            "range": "± 1592191",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/codegen/with-parser/colors",
-            "value": 40373,
-            "range": "± 1056",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/codegen/with-parser/large",
-            "value": 450111,
-            "range": "± 2507",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/minify/libraries/antd",
-            "value": 1556035566,
-            "range": "± 19953000",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/minify/libraries/d3",
-            "value": 311269941,
-            "range": "± 14002778",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/minify/libraries/echarts",
-            "value": 1271524527,
-            "range": "± 10723565",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/minify/libraries/jquery",
-            "value": 83856042,
-            "range": "± 812646",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/minify/libraries/lodash",
-            "value": 106062425,
-            "range": "± 286615",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/minify/libraries/moment",
-            "value": 48967298,
-            "range": "± 129629",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/minify/libraries/react",
-            "value": 16402658,
-            "range": "± 61338",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/minify/libraries/terser",
-            "value": 234130276,
-            "range": "± 3193616",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/minify/libraries/three",
-            "value": 415752693,
-            "range": "± 9149091",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/minify/libraries/typescript",
-            "value": 2908174544,
-            "range": "± 39554690",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/minify/libraries/victory",
-            "value": 687124561,
-            "range": "± 23994129",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/minify/libraries/vue",
-            "value": 125026827,
-            "range": "± 1194551",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/compare/clone",
-            "value": 1727597,
-            "range": "± 21324",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/compare/visit_mut_span",
-            "value": 2156759,
-            "range": "± 51195",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/compare/visit_mut_span_panic",
-            "value": 2092305,
-            "range": "± 29832",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/compare/fold_span",
-            "value": 2778381,
-            "range": "± 7245",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/compare/fold_span_panic",
-            "value": 2852048,
-            "range": "± 16530",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/lexer/colors",
-            "value": 9490,
-            "range": "± 35",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/lexer/angular",
-            "value": 5017920,
-            "range": "± 15584",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/lexer/backbone",
-            "value": 642690,
-            "range": "± 9735",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/lexer/jquery",
-            "value": 3655353,
-            "range": "± 29214",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/lexer/jquery mobile",
-            "value": 5620256,
-            "range": "± 71086",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/lexer/mootools",
-            "value": 2880228,
-            "range": "± 34123",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/lexer/underscore",
-            "value": 540991,
-            "range": "± 9134",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/lexer/three",
-            "value": 16387885,
-            "range": "± 92188",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/lexer/yui",
-            "value": 2892301,
-            "range": "± 26856",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/lexer/cal-com",
-            "value": 13159071,
-            "range": "± 612183",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/lexer/typescript",
-            "value": 91636924,
-            "range": "± 526946",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/parser/colors",
-            "value": 23413,
-            "range": "± 360",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/parser/angular",
-            "value": 12501227,
-            "range": "± 104762",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/parser/backbone",
-            "value": 1820893,
-            "range": "± 9018",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/parser/jquery",
-            "value": 10080518,
-            "range": "± 71709",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/parser/jquery mobile",
-            "value": 15157022,
-            "range": "± 210538",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/parser/mootools",
-            "value": 7812212,
-            "range": "± 19503",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/parser/underscore",
-            "value": 1593610,
-            "range": "± 9578",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/parser/three",
-            "value": 44697310,
-            "range": "± 867289",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/parser/yui",
-            "value": 7398709,
-            "range": "± 34944",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/parser/cal-com",
-            "value": 39490776,
-            "range": "± 429206",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/parser/typescript",
-            "value": 267700269,
-            "range": "± 2230846",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/preset-env/usage/builtin_type",
-            "value": 141391,
-            "range": "± 34398",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/preset-env/usage/property",
-            "value": 17394,
-            "range": "± 246",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/resolver/typescript",
-            "value": 97988238,
-            "range": "± 2700930",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/fixer/typescript",
-            "value": 82433309,
-            "range": "± 1841599",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/hygiene/typescript",
-            "value": 172221570,
-            "range": "± 2318823",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/resolver_with_hygiene/typescript",
-            "value": 304014032,
-            "range": "± 3698153",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/base-perf/module_clone",
-            "value": 56385,
-            "range": "± 392",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/base-perf/fold_empty",
-            "value": 59508,
-            "range": "± 274",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/base-perf/fold_noop_impl_all",
-            "value": 59542,
-            "range": "± 1412",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/base-perf/fold_noop_impl_vec",
-            "value": 59118,
-            "range": "± 324",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/base-perf/boxing_boxed_clone",
-            "value": 62,
-            "range": "± 0",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/base-perf/boxing_unboxed_clone",
-            "value": 47,
-            "range": "± 0",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/base-perf/boxing_boxed",
-            "value": 106,
-            "range": "± 0",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/base-perf/boxing_unboxed",
-            "value": 81,
-            "range": "± 0",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/visitor/base-perf/visit_contains_this",
-            "value": 2588,
-            "range": "± 50",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/base/parallel/resolver/typescript",
-            "value": 2487456796,
-            "range": "± 116512734",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/base/parallel/hygiene/typescript",
-            "value": 3254392236,
-            "range": "± 58144088",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "babelify-only",
-            "value": 494774,
-            "range": "± 20105",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parse_and_babelify_angular",
-            "value": 37196429,
-            "range": "± 343475",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parse_and_babelify_backbone",
-            "value": 4340368,
-            "range": "± 146357",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parse_and_babelify_jquery",
-            "value": 29004369,
-            "range": "± 410581",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parse_and_babelify_jquery_mobile",
-            "value": 50614574,
-            "range": "± 1083053",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parse_and_babelify_mootools",
-            "value": 25715385,
-            "range": "± 246791",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parse_and_babelify_underscore",
-            "value": 3662514,
-            "range": "± 8100",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parse_and_babelify_yui",
-            "value": 24313523,
-            "range": "± 508815",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/minify/document/css_spec",
-            "value": 45347455,
-            "range": "± 844079",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/minify/document/github",
-            "value": 18175235,
-            "range": "± 144195",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/minify/document/stackoverflow",
-            "value": 16616657,
-            "range": "± 593523",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/minify/document_fragment/css_spec",
-            "value": 44088283,
-            "range": "± 539654",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/minify/document_fragment/github",
-            "value": 17837422,
-            "range": "± 439133",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/minify/document_fragment/stackoverflow",
-            "value": 16152177,
-            "range": "± 50919",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/document/visitor/compare/clone",
-            "value": 168266,
-            "range": "± 1503",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/document/visitor/compare/visit_mut_span",
-            "value": 186163,
-            "range": "± 1193",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/document/visitor/compare/visit_mut_span_panic",
-            "value": 190852,
-            "range": "± 1192",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/document/visitor/compare/fold_span",
-            "value": 235981,
-            "range": "± 1505",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/document/visitor/compare/fold_span_panic",
-            "value": 282953,
-            "range": "± 1887",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/document_fragment/visitor/compare/clone",
-            "value": 171859,
-            "range": "± 1466",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/document_fragment/visitor/compare/visit_mut_span",
-            "value": 187762,
-            "range": "± 1777",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/document_fragment/visitor/compare/visit_mut_span_panic",
-            "value": 191359,
-            "range": "± 1343",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/document_fragment/visitor/compare/fold_span",
-            "value": 234383,
-            "range": "± 1955",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/document_fragment/visitor/compare/fold_span_panic",
-            "value": 283255,
-            "range": "± 1512",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/lexer/css_2021_spec",
-            "value": 12879102,
-            "range": "± 54777",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/lexer/github_com_17_05_2022",
-            "value": 4924895,
-            "range": "± 7833",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/lexer/stackoverflow_com_17_05_2022",
-            "value": 4688996,
-            "range": "± 127424",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/parser/parser_document/css_2021_spec",
-            "value": 25624559,
-            "range": "± 200238",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/parser/parser_document/github_com_17_05_2022",
-            "value": 8470308,
-            "range": "± 14103",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/parser/parser_document/stackoverflow_com_17_05_2022",
-            "value": 7481381,
-            "range": "± 14122",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/parser/parser_document_fragment/css_2021_spec",
-            "value": 25280391,
-            "range": "± 76664",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/parser/parser_document_fragment/github_com_17_05_2022",
-            "value": 8430956,
-            "range": "± 37717",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "html/parser/parser_document_fragment/stackoverflow_com_17_05_2022",
-            "value": 7429603,
-            "range": "± 20206",
-            "unit": "ns/iter"
-          }
-        ]
-      }
-    ]
-  }
+	"lastUpdate": 1720086043856,
+	"repoUrl": "https://github.com/swc-project/swc",
+	"entries": {
+		"Benchmark": [
+			{
+				"commit": {
+					"author": {
+						"email": "kdy1997.dev@gmail.com",
+						"name": "Donny/강동윤",
+						"username": "kdy1"
+					},
+					"committer": {
+						"email": "noreply@github.com",
+						"name": "GitHub",
+						"username": "web-flow"
+					},
+					"distinct": true,
+					"id": "307b6f27a6860c65f835776549e96cd658cfc817",
+					"message": "refactor(bindings/ts): Inline Wasm file into `wasm.js` (#9139)\n\n**Description:**\r\n\r\nRequested by https://github.com/marco-ippolito/node/pull/2/files#r1665267733",
+					"timestamp": "2024-07-04T18:23:55+09:00",
+					"tree_id": "03458f3ccdaf6a38dc57b259fce2503b18053444",
+					"url": "https://github.com/swc-project/swc/commit/307b6f27a6860c65f835776549e96cd658cfc817"
+				},
+				"date": 1720086043856,
+				"tool": "cargo",
+				"benches": [
+					{
+						"name": "es/full/bugs-1",
+						"value": 277530,
+						"range": "± 1316",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/minify/libraries/antd",
+						"value": 2068690340,
+						"range": "± 66548630",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/minify/libraries/d3",
+						"value": 427297670,
+						"range": "± 10527793",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/minify/libraries/echarts",
+						"value": 1782403033,
+						"range": "± 21631962",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/minify/libraries/jquery",
+						"value": 110711034,
+						"range": "± 1613653",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/minify/libraries/lodash",
+						"value": 121856807,
+						"range": "± 1883026",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/minify/libraries/moment",
+						"value": 62759261,
+						"range": "± 401796",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/minify/libraries/react",
+						"value": 19039215,
+						"range": "± 103697",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/minify/libraries/terser",
+						"value": 341682493,
+						"range": "± 13840088",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/minify/libraries/three",
+						"value": 636074858,
+						"range": "± 22958037",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/minify/libraries/typescript",
+						"value": 3535337889,
+						"range": "± 33966321",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/minify/libraries/victory",
+						"value": 1019700307,
+						"range": "± 19897044",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/minify/libraries/vue",
+						"value": 160562412,
+						"range": "± 1996125",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/codegen/es3",
+						"value": 60539,
+						"range": "± 164",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/codegen/es5",
+						"value": 61459,
+						"range": "± 490",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/codegen/es2015",
+						"value": 60896,
+						"range": "± 420",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/codegen/es2016",
+						"value": 61107,
+						"range": "± 558",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/codegen/es2017",
+						"value": 60855,
+						"range": "± 355",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/codegen/es2018",
+						"value": 61255,
+						"range": "± 454",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/codegen/es2019",
+						"value": 61536,
+						"range": "± 395",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/codegen/es2020",
+						"value": 60531,
+						"range": "± 103",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/all/es3",
+						"value": 165173322,
+						"range": "± 587926",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/all/es5",
+						"value": 159546007,
+						"range": "± 405631",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/all/es2015",
+						"value": 117744203,
+						"range": "± 917189",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/all/es2016",
+						"value": 116652402,
+						"range": "± 1328741",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/all/es2017",
+						"value": 115828027,
+						"range": "± 2321375",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/all/es2018",
+						"value": 113835680,
+						"range": "± 878329",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/all/es2019",
+						"value": 113487523,
+						"range": "± 602199",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/all/es2020",
+						"value": 108667012,
+						"range": "± 558434",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/parser",
+						"value": 461526,
+						"range": "± 3091",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/base/fixer",
+						"value": 15260,
+						"range": "± 58",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/full/base/resolver_and_hygiene",
+						"value": 81899,
+						"range": "± 332",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "serialization of serde",
+						"value": 271,
+						"range": "± 7",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "css/minify/libraries/bootstrap",
+						"value": 22232929,
+						"range": "± 491634",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "css/visitor/compare/clone",
+						"value": 1365448,
+						"range": "± 9489",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "css/visitor/compare/visit_mut_span",
+						"value": 1479961,
+						"range": "± 22575",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "css/visitor/compare/visit_mut_span_panic",
+						"value": 1492992,
+						"range": "± 43582",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "css/visitor/compare/fold_span",
+						"value": 1998134,
+						"range": "± 18055",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "css/visitor/compare/fold_span_panic",
+						"value": 2119601,
+						"range": "± 3059",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "css/lexer/bootstrap_5_1_3",
+						"value": 3510020,
+						"range": "± 27575",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "css/lexer/foundation_6_7_4",
+						"value": 2830925,
+						"range": "± 2400",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "css/lexer/tailwind_3_1_1",
+						"value": 548287,
+						"range": "± 621",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "css/parser/bootstrap_5_1_3",
+						"value": 16142257,
+						"range": "± 124520",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "css/parser/foundation_6_7_4",
+						"value": 12847036,
+						"range": "± 7496",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "css/parser/tailwind_3_1_1",
+						"value": 2532937,
+						"range": "± 6072",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/codegen/colors",
+						"value": 723205,
+						"range": "± 395543",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/codegen/large",
+						"value": 2954185,
+						"range": "± 1592191",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/codegen/with-parser/colors",
+						"value": 40373,
+						"range": "± 1056",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/codegen/with-parser/large",
+						"value": 450111,
+						"range": "± 2507",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/minify/libraries/antd",
+						"value": 1556035566,
+						"range": "± 19953000",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/minify/libraries/d3",
+						"value": 311269941,
+						"range": "± 14002778",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/minify/libraries/echarts",
+						"value": 1271524527,
+						"range": "± 10723565",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/minify/libraries/jquery",
+						"value": 83856042,
+						"range": "± 812646",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/minify/libraries/lodash",
+						"value": 106062425,
+						"range": "± 286615",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/minify/libraries/moment",
+						"value": 48967298,
+						"range": "± 129629",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/minify/libraries/react",
+						"value": 16402658,
+						"range": "± 61338",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/minify/libraries/terser",
+						"value": 234130276,
+						"range": "± 3193616",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/minify/libraries/three",
+						"value": 415752693,
+						"range": "± 9149091",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/minify/libraries/typescript",
+						"value": 2908174544,
+						"range": "± 39554690",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/minify/libraries/victory",
+						"value": 687124561,
+						"range": "± 23994129",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/minify/libraries/vue",
+						"value": 125026827,
+						"range": "± 1194551",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/compare/clone",
+						"value": 1727597,
+						"range": "± 21324",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/compare/visit_mut_span",
+						"value": 2156759,
+						"range": "± 51195",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/compare/visit_mut_span_panic",
+						"value": 2092305,
+						"range": "± 29832",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/compare/fold_span",
+						"value": 2778381,
+						"range": "± 7245",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/compare/fold_span_panic",
+						"value": 2852048,
+						"range": "± 16530",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/lexer/colors",
+						"value": 9490,
+						"range": "± 35",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/lexer/angular",
+						"value": 5017920,
+						"range": "± 15584",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/lexer/backbone",
+						"value": 642690,
+						"range": "± 9735",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/lexer/jquery",
+						"value": 3655353,
+						"range": "± 29214",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/lexer/jquery mobile",
+						"value": 5620256,
+						"range": "± 71086",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/lexer/mootools",
+						"value": 2880228,
+						"range": "± 34123",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/lexer/underscore",
+						"value": 540991,
+						"range": "± 9134",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/lexer/three",
+						"value": 16387885,
+						"range": "± 92188",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/lexer/yui",
+						"value": 2892301,
+						"range": "± 26856",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/lexer/cal-com",
+						"value": 13159071,
+						"range": "± 612183",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/lexer/typescript",
+						"value": 91636924,
+						"range": "± 526946",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/parser/colors",
+						"value": 23413,
+						"range": "± 360",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/parser/angular",
+						"value": 12501227,
+						"range": "± 104762",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/parser/backbone",
+						"value": 1820893,
+						"range": "± 9018",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/parser/jquery",
+						"value": 10080518,
+						"range": "± 71709",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/parser/jquery mobile",
+						"value": 15157022,
+						"range": "± 210538",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/parser/mootools",
+						"value": 7812212,
+						"range": "± 19503",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/parser/underscore",
+						"value": 1593610,
+						"range": "± 9578",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/parser/three",
+						"value": 44697310,
+						"range": "± 867289",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/parser/yui",
+						"value": 7398709,
+						"range": "± 34944",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/parser/cal-com",
+						"value": 39490776,
+						"range": "± 429206",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/parser/typescript",
+						"value": 267700269,
+						"range": "± 2230846",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/preset-env/usage/builtin_type",
+						"value": 141391,
+						"range": "± 34398",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/preset-env/usage/property",
+						"value": 17394,
+						"range": "± 246",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/resolver/typescript",
+						"value": 97988238,
+						"range": "± 2700930",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/fixer/typescript",
+						"value": 82433309,
+						"range": "± 1841599",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/hygiene/typescript",
+						"value": 172221570,
+						"range": "± 2318823",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/resolver_with_hygiene/typescript",
+						"value": 304014032,
+						"range": "± 3698153",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/base-perf/module_clone",
+						"value": 56385,
+						"range": "± 392",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/base-perf/fold_empty",
+						"value": 59508,
+						"range": "± 274",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/base-perf/fold_noop_impl_all",
+						"value": 59542,
+						"range": "± 1412",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/base-perf/fold_noop_impl_vec",
+						"value": 59118,
+						"range": "± 324",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/base-perf/boxing_boxed_clone",
+						"value": 62,
+						"range": "± 0",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/base-perf/boxing_unboxed_clone",
+						"value": 47,
+						"range": "± 0",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/base-perf/boxing_boxed",
+						"value": 106,
+						"range": "± 0",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/base-perf/boxing_unboxed",
+						"value": 81,
+						"range": "± 0",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/visitor/base-perf/visit_contains_this",
+						"value": 2588,
+						"range": "± 50",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/base/parallel/resolver/typescript",
+						"value": 2487456796,
+						"range": "± 116512734",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "es/base/parallel/hygiene/typescript",
+						"value": 3254392236,
+						"range": "± 58144088",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "babelify-only",
+						"value": 494774,
+						"range": "± 20105",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "parse_and_babelify_angular",
+						"value": 37196429,
+						"range": "± 343475",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "parse_and_babelify_backbone",
+						"value": 4340368,
+						"range": "± 146357",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "parse_and_babelify_jquery",
+						"value": 29004369,
+						"range": "± 410581",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "parse_and_babelify_jquery_mobile",
+						"value": 50614574,
+						"range": "± 1083053",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "parse_and_babelify_mootools",
+						"value": 25715385,
+						"range": "± 246791",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "parse_and_babelify_underscore",
+						"value": 3662514,
+						"range": "± 8100",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "parse_and_babelify_yui",
+						"value": 24313523,
+						"range": "± 508815",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/minify/document/css_spec",
+						"value": 45347455,
+						"range": "± 844079",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/minify/document/github",
+						"value": 18175235,
+						"range": "± 144195",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/minify/document/stackoverflow",
+						"value": 16616657,
+						"range": "± 593523",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/minify/document_fragment/css_spec",
+						"value": 44088283,
+						"range": "± 539654",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/minify/document_fragment/github",
+						"value": 17837422,
+						"range": "± 439133",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/minify/document_fragment/stackoverflow",
+						"value": 16152177,
+						"range": "± 50919",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/document/visitor/compare/clone",
+						"value": 168266,
+						"range": "± 1503",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/document/visitor/compare/visit_mut_span",
+						"value": 186163,
+						"range": "± 1193",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/document/visitor/compare/visit_mut_span_panic",
+						"value": 190852,
+						"range": "± 1192",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/document/visitor/compare/fold_span",
+						"value": 235981,
+						"range": "± 1505",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/document/visitor/compare/fold_span_panic",
+						"value": 282953,
+						"range": "± 1887",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/document_fragment/visitor/compare/clone",
+						"value": 171859,
+						"range": "± 1466",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/document_fragment/visitor/compare/visit_mut_span",
+						"value": 187762,
+						"range": "± 1777",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/document_fragment/visitor/compare/visit_mut_span_panic",
+						"value": 191359,
+						"range": "± 1343",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/document_fragment/visitor/compare/fold_span",
+						"value": 234383,
+						"range": "± 1955",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/document_fragment/visitor/compare/fold_span_panic",
+						"value": 283255,
+						"range": "± 1512",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/lexer/css_2021_spec",
+						"value": 12879102,
+						"range": "± 54777",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/lexer/github_com_17_05_2022",
+						"value": 4924895,
+						"range": "± 7833",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/lexer/stackoverflow_com_17_05_2022",
+						"value": 4688996,
+						"range": "± 127424",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/parser/parser_document/css_2021_spec",
+						"value": 25624559,
+						"range": "± 200238",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/parser/parser_document/github_com_17_05_2022",
+						"value": 8470308,
+						"range": "± 14103",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/parser/parser_document/stackoverflow_com_17_05_2022",
+						"value": 7481381,
+						"range": "± 14122",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/parser/parser_document_fragment/css_2021_spec",
+						"value": 25280391,
+						"range": "± 76664",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/parser/parser_document_fragment/github_com_17_05_2022",
+						"value": 8430956,
+						"range": "± 37717",
+						"unit": "ns/iter"
+					},
+					{
+						"name": "html/parser/parser_document_fragment/stackoverflow_com_17_05_2022",
+						"value": 7429603,
+						"range": "± 20206",
+						"unit": "ns/iter"
+					}
+				]
+			}
+		]
+	}
 }
